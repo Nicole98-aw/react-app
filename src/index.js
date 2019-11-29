@@ -1,12 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+// import "./index.css";
+// import App from "./App";
+// import * as serviceWorker from "./serviceWorker";
+function App() {
+  const date = new Date();
 
-ReactDOM.render(<App />, document.getElementById('root'));
+  return <h1>It is currently about {date.getHours() % 12} o'clock!</h1>;
+}
+ReactDOM.render(<App />, document.getElementById("root")); //App is the root component
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// serviceWorker.unregister();
