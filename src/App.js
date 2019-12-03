@@ -1,46 +1,31 @@
 //App component is the entry point into the entire application
 import React from "react";
-import ContentCard from "./Components/ContentCard";
+import Joke from "./Components/Joke.js";
 // import logo from "./logo.svg";
 // import "./App.css";
 
 function App() {
   return (
     <div className="contacts">
-      <ContentCard
-        contact={{
-          name: "Mr.Whiskerson",
-          imgUrl: "http://placekitten.com/300/200",
-          phone: "254 92281921",
-          email: "whiskersoncat.com"
-        }}
+      <Joke
+        question="What's the best thing about Switzerland?"
+        punchline="I don't know,but the flag is a big plus!"
       />
-
-      <ContentCard
-        contact={{
-          name: "Fluffykins",
-          imgUrl: "http://placekitten.com/400/200",
-          phone: "254 92281921",
-          email: "fluffykins.com"
-        }}
+      <Joke
+        question="Did you hear about the Mathematician who's afraid of big numbers?"
+        punchline="He'll stop at nothing to avoid them"
       />
-
-      <ContentCard
-        contact={{
-          name: "Destroyer",
-          imgUrl: "http://placekitten.com/400/300",
-          phone: "254 92281921",
-          email: "destroyercat.com"
-        }}
+      <Joke
+        question="Heard about the new restaurant called Karma?"
+        punchline="There's no menu! You get what you deserve."
       />
-
-      <ContentCard
-        contact={{
-          name: "Felix",
-          imgUrl: "http://placekitten.com/200/100",
-          phone: "254 92281921",
-          email: "felixcat.com"
-        }}
+      <Joke
+        question="Did you hear about the actor who fell through the floorboards?"
+        punchline="He was just going through a stage."
+      />
+      <Joke
+        question="Would you like to know how to code?"
+        punchline="Yes I would."
       />
     </div>
   );
