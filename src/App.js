@@ -18,4 +18,23 @@ import React from "react";
 //   return <div>{todoItems}</div>;
 // }
 
-// export default App;
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "Nicky Wedekind",
+      age: 21
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>{this.state.name}</h2>
+        <h2>{this.state.age} years old.</h2>
+      </div>
+    );
+  }
+}
+
+export default App;
