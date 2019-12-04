@@ -22,18 +22,17 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: "Nicky Wedekind",
-      age: 21
+      isLoggedIn: false
     };
   }
-
   render() {
-    return (
-      <div>
-        <h2>{this.state.name}</h2>
-        <h2>{this.state.age} years old.</h2>
-      </div>
-    );
+    let logIndicator;
+    if (this.state.isLoggedIn === true) {
+      logIndicator = "in";
+    } else {
+      logIndicator = "out";
+    }
+    return <h2>You are currently logged {logIndicator}</h2>;
   }
 }
 
