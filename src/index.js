@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header userName="Cocolii" />
         <Greeting />
       </div>
     );
